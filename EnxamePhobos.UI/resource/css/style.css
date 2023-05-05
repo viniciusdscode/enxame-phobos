@@ -1,0 +1,159 @@
+﻿/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../font/Poppins-Light.ttf');
+}
+
+/*#region global*/
+html {
+    font-family: 'Poppins-Light';
+    font-size: 32px;
+    background: #333333;
+}
+
+body {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+.campoAdm {
+
+    background: transparent!important;
+    text-align: center!important;
+    color:white;
+}
+
+.campoAdm2 {
+    background: transparent !important;
+    text-align: center !important;
+    color: #00ff90;
+    margin-top:5px;
+    cursor: pointer;
+}
+
+table {
+    background: #1e1e1e;
+    color: aliceblue;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table th {
+    background:#00ff90;
+    color:#282828;
+
+}
+
+table td {
+    padding:.8rem 0;
+}
+
+table td, table th {
+    border-top: white solid thin !important;
+    border-right: #333333 solid thin !important;
+}
+
+    table td input {
+        background: #1a1a1a;
+        color: aliceblue;
+        padding: 3% 4%;
+        cursor: pointer;
+        transition: .5s;
+        border: none;
+    }
+
+    table td input:hover {
+        background: #00ff90;
+        color: black;
+        transition: .5s;
+    }
+
+.txtAdm {
+    display:block;
+    text-align:center;
+    color:white;
+}
+
+.searchAdm{
+    background:#333333;
+    padding:.5%;
+}
+
+span {
+    text-align:center;
+    color:white;
+    display:block;
+    margin:.4em;
+}
+
+
+/*#endregion*/
+
+/*#region Classes*/
+.btnDefault {
+    background: black;
+    color: aliceblue;
+    padding: .7% 1.2%;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+    margin-top: .5%;
+    margin-bottom: .5%;
+}
+
+.btnDefault:hover {
+    background:#00ff90;
+    color: black;
+    transition: .5s;
+}
+
+/*#endregion*/
+
+
+/*#region Login*/
+h1 {
+    font-size: 1.5rem;
+    color: white;
+    text-align:center;
+}
+
+.LoginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+label {
+    margin-bottom: 10px;
+}
+
+.btnLogin {
+    padding: 1% 2%;
+    width: 100%;
+    background-color: white;
+    color: white;
+    background: black;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+}
+
+.btnLogin:hover {
+    background: #00ff90;
+    color: black;
+    transition: .5s;
+}
+/*#endregion*/
+
+

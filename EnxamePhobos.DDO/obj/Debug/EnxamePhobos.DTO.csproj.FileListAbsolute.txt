@@ -1,0 +1,6 @@
+C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.DDO\bin\Debug\EnxamePhobos.DDO.dll
+C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.DDO\bin\Debug\EnxamePhobos.DDO.pdb
+C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.DDO\obj\Debug\EnxamePhobos.DTO.csproj.AssemblyReference.cache
+C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.DDO\obj\Debug\EnxamePhobos.DTO.csproj.CoreCompileInputs.cache
+C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.DDO\obj\Debug\EnxamePhobos.DDO.dll
+C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.DDO\obj\Debug\EnxamePhobos.DDO.pdb
