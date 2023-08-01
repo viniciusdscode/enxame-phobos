@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCadastrarFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastrarFilme.Designer.cs">
+      <DependentUpon>FrmCadastrarFilme.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCadastrarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCadastrarUsuario.Designer.cs">
       <DependentUpon>FrmCadastrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditFilme.Designer.cs">
+      <DependentUpon>FrmEditFilme.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditUsuario.cs">
       <SubType>Form</SubType>
@@ -58,11 +70,29 @@
     <Compile Include="FrmEditUsuario.Designer.cs">
       <DependentUpon>FrmEditUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmExcluirFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExcluirFilme.Designer.cs">
+      <DependentUpon>FrmExcluirFilme.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmExcluirUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmExcluirUsuario.Designer.cs">
       <DependentUpon>FrmExcluirUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilme.Designer.cs">
+      <DependentUpon>FrmFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilmeOutros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilmeOutros.Designer.cs">
+      <DependentUpon>FrmFilmeOutros.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -99,14 +129,29 @@
     <Compile Include="Session.cs" />
     <Compile Include="Utilitarios\DGVPrinter.cs" />
     <Compile Include="Utilitarios\Limpar.cs" />
+    <EmbeddedResource Include="FrmCadastrarFilme.resx">
+      <DependentUpon>FrmCadastrarFilme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastrarUsuario.resx">
       <DependentUpon>FrmCadastrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditFilme.resx">
+      <DependentUpon>FrmEditFilme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditUsuario.resx">
       <DependentUpon>FrmEditUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmExcluirFilme.resx">
+      <DependentUpon>FrmExcluirFilme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmExcluirUsuario.resx">
       <DependentUpon>FrmExcluirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilme.resx">
+      <DependentUpon>FrmFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilmeOutros.resx">
+      <DependentUpon>FrmFilmeOutros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>

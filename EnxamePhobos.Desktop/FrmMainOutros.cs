@@ -25,8 +25,10 @@ namespace EnxamePhobos.Desktop
 
         private void btnFilmes_Click(object sender, EventArgs e)
         {
-
+            FrmFilmeOutros objFilme = new FrmFilmeOutros();
+            objFilme.ShowDialog();
         }
+
         private void usuarioToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             FrmUsuarioOutros obj = new FrmUsuarioOutros();
@@ -35,8 +37,10 @@ namespace EnxamePhobos.Desktop
 
         private void filmeToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
+            FrmFilmeOutros objFilme = new FrmFilmeOutros();
+            objFilme.ShowDialog();
         }
+
         private void btnWord_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("winword");
@@ -52,7 +56,6 @@ namespace EnxamePhobos.Desktop
         {
             System.Diagnostics.Process.Start("calc");
         }
-
 
         private void btnSair_Click(object sender, EventArgs e)
         {

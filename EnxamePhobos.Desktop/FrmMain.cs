@@ -93,5 +93,29 @@ namespace EnxamePhobos.Desktop
             FrmEditUsuario obj = new FrmEditUsuario();
             obj.ShowDialog();
         }
+
+        private void filmeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadastrarFilme obj = new FrmCadastrarFilme();
+            obj.ShowDialog();
+        }
+
+        private void filmeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmEditFilme obj = new FrmEditFilme();
+            obj.ShowDialog();
+        }
+
+        private void filmeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmExcluirFilme obj = new FrmExcluirFilme();
+            obj.ShowDialog();
+        }
+
+        private void filmeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FrmFilme obj = new FrmFilme();
+            obj.ShowDialog();
+        }
     }
 }

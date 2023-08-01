@@ -89,15 +89,16 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuarioToolStripMenuItem.Text = "&Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // filmeToolStripMenuItem
             // 
             this.filmeToolStripMenuItem.Name = "filmeToolStripMenuItem";
-            this.filmeToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.filmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.filmeToolStripMenuItem.Text = "&Filme";
+            this.filmeToolStripMenuItem.Click += new System.EventHandler(this.filmeToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
@@ -118,8 +119,9 @@
             // filmeToolStripMenuItem1
             // 
             this.filmeToolStripMenuItem1.Name = "filmeToolStripMenuItem1";
-            this.filmeToolStripMenuItem1.Size = new System.Drawing.Size(114, 22);
+            this.filmeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.filmeToolStripMenuItem1.Text = "&Filme";
+            this.filmeToolStripMenuItem1.Click += new System.EventHandler(this.filmeToolStripMenuItem1_Click);
             // 
             // excluirToolStripMenuItem
             // 
@@ -140,8 +142,9 @@
             // filmeToolStripMenuItem2
             // 
             this.filmeToolStripMenuItem2.Name = "filmeToolStripMenuItem2";
-            this.filmeToolStripMenuItem2.Size = new System.Drawing.Size(114, 22);
+            this.filmeToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.filmeToolStripMenuItem2.Text = "&Filme";
+            this.filmeToolStripMenuItem2.Click += new System.EventHandler(this.filmeToolStripMenuItem2_Click);
             // 
             // relatoriosToolStripMenuItem
             // 
@@ -162,8 +165,9 @@
             // filmeToolStripMenuItem3
             // 
             this.filmeToolStripMenuItem3.Name = "filmeToolStripMenuItem3";
-            this.filmeToolStripMenuItem3.Size = new System.Drawing.Size(114, 22);
+            this.filmeToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.filmeToolStripMenuItem3.Text = "&Filme";
+            this.filmeToolStripMenuItem3.Click += new System.EventHandler(this.filmeToolStripMenuItem3_Click);
             // 
             // sairToolStripMenuItem
             // 
