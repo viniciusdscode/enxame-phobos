@@ -143,6 +143,38 @@ namespace EnxamePhobos.DAL
             }
         }
 
+        public UsuarioDTO SearchNameDsk(string objSearch)
+        {
+            try
+            {
+                Conectar();
+                cmd = new MySqlCommand("SELECT Usuario.Id, Nome, Email, Senha, DataNascUsuario, Descricao FROM Usuario INNER JOIN TipoUsuario ON Usuario.TipoUsuario_Id = TipoUsuario.Id WHERE Usuario.Nome = @Nome;", conn);
+                cmd.Parameters.AddWithValue("@Nome", objSearch);
+                dr = cmd.ExecuteReader();
+                UsuarioDTO obj = null;
+                if (dr.Read())
+                {
+                    obj = new UsuarioDTO();
+                    obj.Id = Convert.ToInt32(dr["Id"]);
+                    obj.Nome = dr["Nome"].ToString();
+                    obj.Email = dr["Email"].ToString();
+                    obj.Senha = dr["Senha"].ToString();
+                    obj.DataNascUsuario = Convert.ToDateTime(dr["DataNascUsuario"]);
+                    obj.TipoUsuario_id = dr["Descricao"].ToString();
+                }
+                return obj;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Deu Merda !" + ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
 
         //busca por id
         public UsuarioDTO SearchId(int objSearch)

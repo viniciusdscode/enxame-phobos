@@ -9,15 +9,15 @@ namespace EnxamePhobos.UI.user
 {
     public partial class DefaultUser : System.Web.UI.MasterPage
     {
-        //protected void Page_Load(object sender, EventArgs e)
-        //{
-        //    lblSession.Font.Size = 14;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            lblSession.Font.Size = 14;
 
-        //    if (Session["Usuario"] == null)
-        //    {
-        //        Response.Redirect("~/Login.aspx");
-        //    }
-        //    lblSession.Text = $"Seja Bem Chegado ! {Session["Usuario"].ToString().ToUpper()} a Enxame Phobos Anomaly!! Sua sessão iniciou às {DateTime.Now.ToString("t")}";
-        //}
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
+            lblSession.Text = $"Seja Bem Chegado ! {Session["Usuario"].ToString().ToUpper()} a Enxame Phobos Anomaly!! Sua sessão iniciou às {DateTime.Now.ToString("t")}";
+        }
     }
 }

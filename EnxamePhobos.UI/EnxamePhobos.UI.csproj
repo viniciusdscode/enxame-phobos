@@ -69,9 +69,68 @@
   <ItemGroup>
     <Content Include="adm\ManageFilm.aspx" />
     <Content Include="adm\ManageUser.aspx" />
+    <Content Include="faq.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="resource\css\contato.css" />
+    <Content Include="resource\css\estilo.css" />
+    <Content Include="resource\css\faq.css" />
+    <Content Include="resource\css\lity.css" />
+    <Content Include="resource\css\lity.min.css" />
+    <Content Include="resource\css\quemsomos.css" />
+    <Content Include="resource\css\reset.css" />
+    <Content Include="resource\css\servicos.css" />
+    <Content Include="resource\css\slick-theme.css" />
+    <Content Include="resource\css\slick.css" />
     <Content Include="resource\css\style.css" />
     <Content Include="resource\img\20191016040230.jpg" />
+    <Content Include="resource\img\aa\cardQs1.png" />
+    <Content Include="resource\img\aa\mosaicoImagem1.png" />
+    <Content Include="resource\img\aa\mosaicoImagem2.png" />
+    <Content Include="resource\img\banner_black01.png" />
+    <Content Include="resource\img\blog.png" />
+    <Content Include="resource\img\cardQs.png" />
+    <Content Include="resource\img\cardQs1.jpg" />
+    <Content Include="resource\img\carrossel.png" />
+    <Content Include="resource\img\carrossel\beautysite_banner01.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner02.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner03.png" />
+    <Content Include="resource\img\carrossel\beautysite_banner04.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner05.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner06.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner07.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner08.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner09.jpg" />
+    <Content Include="resource\img\carrossel\beautysite_banner10.jpg" />
+    <Content Include="resource\img\close.png" />
+    <Content Include="resource\img\dark600x260.jpg" />
+    <Content Include="resource\img\ESTÈTICA %281%29.jpg" />
+    <Content Include="resource\img\ESTÈTICA %282%29.jpg" />
+    <Content Include="resource\img\ESTÈTICA.jpg" />
+    <Content Include="resource\img\facebook-logo %281%29.png" />
+    <Content Include="resource\img\icons beauty\facebook.png" />
+    <Content Include="resource\img\icons beauty\instagram%281%29.png" />
+    <Content Include="resource\img\icons beauty\instagram.png" />
+    <Content Include="resource\img\icons beauty\linkedin.png" />
+    <Content Include="resource\img\icons beauty\whattsapp.png" />
+    <Content Include="resource\img\injecao-cosmetica-de-botox-na-testa.jpg" />
+    <Content Include="resource\img\logo-instagram %283%29.png" />
+    <Content Include="resource\img\logo-linkedin %281%29.png" />
+    <Content Include="resource\img\logob.svg" />
+    <Content Include="resource\img\menu.png" />
+    <Content Include="resource\img\moroccan-flower.png" />
+    <Content Include="resource\img\mosaicoImagem1.jpg" />
+    <Content Include="resource\img\mosaicoImagem2.jpg" />
+    <Content Include="resource\img\parte_explicacao01.jpg" />
+    <Content Include="resource\img\royal_crown_set-05 .svg" />
+    <Content Include="resource\img\uma-linda-jovem-deita-se-na-mesa-da-esteticista-e-recebe-procedimentos.jpg" />
+    <Content Include="resource\script\animacoes.js" />
+    <Content Include="resource\script\contato.js" />
+    <Content Include="resource\script\jquery-3.6.3.min.js" />
+    <Content Include="resource\script\lity.js" />
+    <Content Include="resource\script\lity.min.js" />
+    <Content Include="resource\script\slick.js" />
+    <Content Include="resource\script\slick.min.js" />
     <Content Include="user\ConsultaFilm.aspx" />
     <Content Include="user\ConsultaUser.aspx" />
     <Content Include="Web.config" />
@@ -97,6 +156,20 @@
     </Compile>
     <Compile Include="adm\ManageUser.aspx.designer.cs">
       <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="faq.aspx.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="faq.aspx.designer.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -134,6 +207,7 @@
     <None Include="packages.config" />
     <Content Include="user\DefaultUser.Master" />
     <Content Include="resource\font\Poppins-Light.ttf" />
+    <Content Include="resource\img\parte_explicacao01.webp" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -141,9 +215,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="resource\script\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EnxamePhobos.BLL\EnxamePhobos.BLL.csproj">
       <Project>{74dc8f09-941c-488d-8384-86dcdd975045}</Project>

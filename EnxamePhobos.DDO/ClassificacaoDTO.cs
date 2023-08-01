@@ -9,6 +9,6 @@ namespace EnxamePhobos.DDO
     public class ClassificacaoDTO
     {
         public int ID { get; set; }
-        public string Descricao { get; set; }
+        public string DescricaoClassificacao { get; set; }
     }
 }

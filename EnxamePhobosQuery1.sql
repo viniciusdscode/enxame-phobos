@@ -15,6 +15,10 @@ select Nome, Senha, TipoUsuario_id from Usuario where Nome='Robsu' and Senha='12
 select Usuario.id, Nome, Email, Senha, DataNascUsuario, Descricao from Usuario inner join TipoUsuario
 on Usuario.TipoUsuario_id = TipoUsuario.id order by Usuario.id asc; 
 
+SELECT Usuario.id, Nome, Email, Senha, DataNascUsuario, Descricao FROM Usuario INNER JOIN TipoUsuario ON Usuario.TipoUsuario_id = TipoUsuario.id WHERE usuario.nome = 'robsu';
+
+SELECT Usuario.Id, Nome, Email, Senha, DataNascUsuario, Descricao FROM Usuario INNER JOIN TipoUsuario ON Usuario.TipoUsuario_id = TipoUsuario.id WHERE usuario.nome = 'uil';
+
 /**/
 select*from usuario where usuario.nome = 'uil';
 
@@ -23,7 +27,7 @@ insert into usuario (Nome,Email,Senha,DataNascUsuario,TipoUsuario_id) values
 
 update Usuario set Nome = 'kaiqque',Email='kaiqque@email.com' where Usuario.Id = 6;
 
-DELETE FROM Usuario WHERE usuario.Id = 7;
+DELETE FROM usuario WHERE usuario.Id = 23;
 
 select * from Filme;
 
@@ -69,6 +73,21 @@ CHANGE GENERO1 Genero VARCHAR(150) NOT NULL;
 describe GENERO;
 
 ALTER TABLE classificacao
-CHANGE CLASSIFICACAO1 Classificacao VARCHAR(150) NOT NULL;
+CHANGE descricao DescricaoClassificacao VARCHAR(150) NOT NULL;
 
-DELETE FROM Filme WHERE Filme.Id = 21;
+DELETE FROM usuario WHERE usuario.id = 21;
+
+SELECT filme.id,titulo,produtora,urlimg,genero.DescricaoGenero,classificacao.DescricaoClassificacao FROM filme INNER JOIN genero ON genero_id = genero.id INNER JOIN classificacao ON classificacao_id = classificacao.id ORDER BY filme.id ASC;
+
+
+select * from usuario;
+
+SELECT filme.id,Titulo,produtora,UrlImg,genero_id, DescricaoClassificacao FROM filme INNER JOIN classificacao ON classificacao_id = classificacao.id WHERE filme.Titulo = 'Terrifier';
+
+SELECT * FROM filme WHERE filme.id = 2;
+
+UPDATE filme SET Titulo='Terrifier', Produtora='MONDO', UrlImg='~/resource/img/terrifier.jpg', Genero_Id='5', Classificacao_Id='2' WHERE filme.Id = '2';
+
+SELECT Usuario.Id, Nome, Email, Senha, DataNascUsuario, Descricao FROM Usuario INNER JOIN TipoUsuario ON Usuario.TipoUsuario_Id = TipoUsuario.Id WHERE Usuario.Nome = 'robsu';
+
+SELECT filme.id,Titulo,Produtora,UrlImg,DescricaoGenero,DescricaoClassificacao FROM filme INNER JOIN genero ON genero_id = genero.id INNER JOIN classificacao ON Classificacao_Id = classificacao.id WHERE DescricaoGenero = 'Terror';

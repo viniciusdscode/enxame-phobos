@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnxamePhobos.DAL", "EnxameP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnxamePhobos.DTO", "EnxamePhobos.DDO\EnxamePhobos.DTO.csproj", "{43855BF6-6964-4975-93A5-FEFA4695DFD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnxamePhobos.ZDesktop", "EnxamePhobos.Desktop\EnxamePhobos.ZDesktop.csproj", "{B41CC9FE-6053-4F15-ACBB-70CE5A6B4265}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{43855BF6-6964-4975-93A5-FEFA4695DFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43855BF6-6964-4975-93A5-FEFA4695DFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43855BF6-6964-4975-93A5-FEFA4695DFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41CC9FE-6053-4F15-ACBB-70CE5A6B4265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41CC9FE-6053-4F15-ACBB-70CE5A6B4265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41CC9FE-6053-4F15-ACBB-70CE5A6B4265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41CC9FE-6053-4F15-ACBB-70CE5A6B4265}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

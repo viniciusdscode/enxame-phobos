@@ -19,10 +19,45 @@ namespace EnxamePhobos.BLL
             return objBLL.Listar();
         }
 
-        //busca nome
-        public FilmeDTO SearchByFilm(string objSearch)
+        //carrega ddl
+        public List<GeneroDTO> CarregarDDList()
         {
-            return objBLL.SearchFilm(objSearch);
+            return objBLL.CarregaDDL();
+        }
+
+        //insert
+        public void CadastrarFilmeBLL(FilmeDTO objCad)
+        {
+            objBLL.CadastrarFilme(objCad);
+        }
+
+        public FilmeDTO SearchByNameFilm(string objSearch)
+        {
+            return objBLL.SearchByName(objSearch);
+        }
+
+        //busca id
+        public FilmeDTO SearchByIdFilm(int objSearch)
+        {
+            return objBLL.SearchIdFilm(objSearch);
+        }
+
+        //update
+        public void UpdateFilm(FilmeDTO objUpdt)
+        {
+            objBLL.Update(objUpdt);
+        }
+
+        //delete
+        public void DeleteUser(int objDel)
+        {
+            objBLL.Delete(objDel);
+        }
+
+        //Filter
+        public List<FilmeDTO> FiltarFilmeBLL(string objFilter)
+        {
+            return objBLL.FiltrarFilme(objFilter);
         }
 
     }

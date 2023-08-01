@@ -52,8 +52,8 @@
                 <asp:TextBox ID="txtSearch" runat="server" placeholder="Search By Name:" CssClass="searchAdm"></asp:TextBox>
                 <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" CssClass="btnDefault"/>
                 <asp:Label ID="lblSearch" runat="server" Text=""></asp:Label>
-
             </li>
+            
         </ul>
     </div>
     

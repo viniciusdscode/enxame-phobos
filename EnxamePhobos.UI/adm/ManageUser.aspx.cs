@@ -60,7 +60,7 @@ namespace EnxamePhobos.UI.adm
         }
 
 
-        protected void Page_Load(object sender, EventArgs e)
+        public void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
@@ -70,7 +70,7 @@ namespace EnxamePhobos.UI.adm
             }
         }
 
-        protected void btnSearch_Click(object sender, EventArgs e)
+        public void btnSearch_Click(object sender, EventArgs e)
         {
             
             if (string.IsNullOrEmpty(txtSearch.Text))
@@ -83,7 +83,7 @@ namespace EnxamePhobos.UI.adm
             lblSearch.Text = string.Empty;
         }
 
-        protected void gv1_SelectedIndexChanged(object sender, EventArgs e)
+        public void gv1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //passando a linha selecionada para a tela
             txtId.Text = gv1.SelectedRow.Cells[1].Text;
@@ -130,7 +130,7 @@ namespace EnxamePhobos.UI.adm
 
 
         //CRUD - Insert / Update
-        protected void btnRecord_Click(object sender, EventArgs e)
+        public void btnRecord_Click(object sender, EventArgs e)
         {
             if (ValidatePage())
             {
@@ -170,7 +170,7 @@ namespace EnxamePhobos.UI.adm
         }
 
         //CRUD - Delete
-        protected void btnDelete_Click(object sender, EventArgs e)
+        public void btnDelete_Click(object sender, EventArgs e)
         {
             objModelo.Id = int.Parse(txtId.Text);
             objBLL.DeleteUser(objModelo.Id);
@@ -179,11 +179,15 @@ namespace EnxamePhobos.UI.adm
         }
 
         //Clear
-        protected void btnLimpar_Click(object sender, EventArgs e)
+        public void btnLimpar_Click(object sender, EventArgs e)
         {
             PopularGV();
             Limpar.ClearControl(this);
             txtSearch.Focus();
         }
+
+        
+
+        
     }
 }

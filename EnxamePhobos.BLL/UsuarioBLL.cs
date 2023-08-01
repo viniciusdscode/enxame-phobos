@@ -46,6 +46,11 @@ namespace EnxamePhobos.BLL
             return objBLL.SearchName(objSearch);
         }
 
+        public UsuarioDTO SearchByNameDesk(string objSearch)
+        {
+            return objBLL.SearchNameDsk(objSearch);
+        }
+
         //busca id
         public UsuarioDTO SearchById(int objSearch)
         {
