@@ -25,6 +25,11 @@ namespace EnxamePhobos.BLL
             return objBLL.CarregaDDL();
         }
 
+        public List<ClassificacaoDTO> CarregarDDListClassif()
+        {
+            return objBLL.CarregaDDLClassif();
+        }
+
         //insert
         public void CadastrarFilmeBLL(FilmeDTO objCad)
         {

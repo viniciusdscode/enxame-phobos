@@ -44,5 +44,11 @@ namespace EnxamePhobos.Desktop
             printer.Footer = DateTime.Now.ToString();
             printer.PrintDataGridView(gv1);
         }
+
+        private void btnGerar_Click(object sender, EventArgs e)
+        {
+            gv1.Visible = true;
+
+        }
     }
 }

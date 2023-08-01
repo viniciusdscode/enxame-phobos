@@ -49,3 +49,4 @@ C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.Desktop\obj\D
 C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.Desktop\obj\Debug\EnxamePhobos.Desktop.FrmCadastrarFilme.resources
 C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.Desktop\obj\Debug\EnxamePhobos.Desktop.FrmEditFilme.resources
 C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.Desktop\obj\Debug\EnxamePhobos.Desktop.FrmExcluirFilme.resources
+C:\Users\vinicius.ssantos79\source\repos\EnxamePhobos\EnxamePhobos.Desktop\obj\Debug\EnxamePhobos.Desktop.FrmFilme.resources

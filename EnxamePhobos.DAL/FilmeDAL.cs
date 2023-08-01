@@ -101,6 +101,36 @@ namespace EnxamePhobos.DAL
             }
         }
 
+        //carrega ddl
+        public List<ClassificacaoDTO> CarregaDDLClassif()
+        {
+            try
+            {
+                Conectar();
+                cmd = new MySqlCommand("SELECT * FROM Classificacao;", conn);
+                dr = cmd.ExecuteReader();
+                List<ClassificacaoDTO> Lista = new List<ClassificacaoDTO>();
+                while (dr.Read())
+                {
+                    ClassificacaoDTO obj = new ClassificacaoDTO();  
+                    obj.ID = Convert.ToInt32(dr["ID"]);
+                    obj.DescricaoClassificacao = dr["DescricaoClassificacao"].ToString();
+                    Lista.Add(obj);
+                }
+                return Lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Deu Merda !!" + ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
         //busca por nome
         public FilmeDTO SearchByName(string objSearch)
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DGVPrinterHelper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,32 @@ namespace EnxamePhobos.Desktop
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            gv1.Visible = false;
+        }
+
+        private void btnBaixar_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+
+            printer.Title = lblTitulo.Text;
+            printer.PageNumbers = true;
+            printer.PorportionalColumns = true;
+            printer.Footer = DateTime.Now.ToString();
+            printer.PrintDataGridView(gv1);
+        }
+
+        private void FrmFilme_Load(object sender, EventArgs e)
+        {
+            gv1.Visible = false;
+        }
+
+        private void btnGerar_Click(object sender, EventArgs e)
+        {
+            gv1.Visible = true;
         }
     }
 }

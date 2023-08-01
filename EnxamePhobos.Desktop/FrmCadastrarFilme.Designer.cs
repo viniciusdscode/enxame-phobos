@@ -32,12 +32,12 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.cbo1 = new System.Windows.Forms.ComboBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.cboGenero = new System.Windows.Forms.ComboBox();
+            this.txtProdutora = new System.Windows.Forms.TextBox();
             this.lblMessage = new System.Windows.Forms.Label();
             this.lblTipoUsuario = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
@@ -47,10 +47,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbo2 = new System.Windows.Forms.ComboBox();
+            this.cboClassif = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pc1 = new System.Windows.Forms.PictureBox();
+            this.btnImg = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnFechar
@@ -73,40 +76,42 @@
             this.btnLimpar.BackColor = System.Drawing.Color.SpringGreen;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpar.Location = new System.Drawing.Point(785, 498);
+            this.btnLimpar.Location = new System.Drawing.Point(787, 685);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(152, 59);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.SpringGreen;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Location = new System.Drawing.Point(541, 498);
+            this.btnCadastrar.Location = new System.Drawing.Point(543, 685);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(152, 59);
             this.btnCadastrar.TabIndex = 5;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // cbo1
+            // cboGenero
             // 
-            this.cbo1.FormattingEnabled = true;
-            this.cbo1.Location = new System.Drawing.Point(537, 383);
-            this.cbo1.Name = "cbo1";
-            this.cbo1.Size = new System.Drawing.Size(399, 21);
-            this.cbo1.TabIndex = 4;
+            this.cboGenero.FormattingEnabled = true;
+            this.cboGenero.Location = new System.Drawing.Point(539, 570);
+            this.cboGenero.Name = "cboGenero";
+            this.cboGenero.Size = new System.Drawing.Size(399, 21);
+            this.cboGenero.TabIndex = 4;
             // 
-            // txtEmail
+            // txtProdutora
             // 
-            this.txtEmail.Location = new System.Drawing.Point(537, 331);
-            this.txtEmail.MaxLength = 150;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(399, 20);
-            this.txtEmail.TabIndex = 1;
+            this.txtProdutora.Location = new System.Drawing.Point(535, 232);
+            this.txtProdutora.MaxLength = 150;
+            this.txtProdutora.Name = "txtProdutora";
+            this.txtProdutora.Size = new System.Drawing.Size(399, 20);
+            this.txtProdutora.TabIndex = 1;
             // 
             // lblMessage
             // 
@@ -123,7 +128,7 @@
             this.lblTipoUsuario.AutoSize = true;
             this.lblTipoUsuario.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTipoUsuario.Location = new System.Drawing.Point(675, 359);
+            this.lblTipoUsuario.Location = new System.Drawing.Point(677, 546);
             this.lblTipoUsuario.Name = "lblTipoUsuario";
             this.lblTipoUsuario.Size = new System.Drawing.Size(0, 21);
             this.lblTipoUsuario.TabIndex = 2;
@@ -133,26 +138,26 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(535, 359);
+            this.label9.Location = new System.Drawing.Point(537, 546);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 21);
             this.label9.TabIndex = 2;
             this.label9.Text = "Gênero:";
             // 
-            // txtNome
+            // txtTitulo
             // 
-            this.txtNome.Location = new System.Drawing.Point(537, 278);
-            this.txtNome.MaxLength = 150;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(400, 20);
-            this.txtNome.TabIndex = 0;
+            this.txtTitulo.Location = new System.Drawing.Point(535, 179);
+            this.txtTitulo.MaxLength = 150;
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(400, 20);
+            this.txtTitulo.TabIndex = 0;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblEmail.Location = new System.Drawing.Point(675, 303);
+            this.lblEmail.Location = new System.Drawing.Point(673, 204);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(0, 21);
             this.lblEmail.TabIndex = 2;
@@ -162,7 +167,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(534, 307);
+            this.label5.Location = new System.Drawing.Point(532, 208);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 21);
             this.label5.TabIndex = 2;
@@ -173,7 +178,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNome.Location = new System.Drawing.Point(675, 254);
+            this.lblNome.Location = new System.Drawing.Point(673, 155);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(0, 21);
             this.lblNome.TabIndex = 2;
@@ -183,7 +188,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(537, 251);
+            this.label4.Location = new System.Drawing.Point(535, 152);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 21);
             this.label4.TabIndex = 2;
@@ -205,7 +210,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comfortaa", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(525, 109);
+            this.label3.Location = new System.Drawing.Point(525, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(387, 69);
             this.label3.TabIndex = 1;
@@ -236,17 +241,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.panel1.Controls.Add(this.cbo2);
+            this.panel1.Controls.Add(this.btnImg);
+            this.panel1.Controls.Add(this.pc1);
+            this.panel1.Controls.Add(this.cboClassif);
             this.panel1.Controls.Add(this.btnFechar);
             this.panel1.Controls.Add(this.btnLimpar);
             this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Controls.Add(this.cbo1);
-            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.cboGenero);
+            this.panel1.Controls.Add(this.txtProdutora);
             this.panel1.Controls.Add(this.lblMessage);
             this.panel1.Controls.Add(this.lblTipoUsuario);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.txtTitulo);
             this.panel1.Controls.Add(this.lblEmail);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.lblNome);
@@ -261,24 +268,43 @@
             this.panel1.Size = new System.Drawing.Size(1000, 800);
             this.panel1.TabIndex = 1;
             // 
-            // cbo2
+            // cboClassif
             // 
-            this.cbo2.FormattingEnabled = true;
-            this.cbo2.Location = new System.Drawing.Point(537, 442);
-            this.cbo2.Name = "cbo2";
-            this.cbo2.Size = new System.Drawing.Size(399, 21);
-            this.cbo2.TabIndex = 8;
+            this.cboClassif.FormattingEnabled = true;
+            this.cboClassif.Location = new System.Drawing.Point(539, 629);
+            this.cboClassif.Name = "cboClassif";
+            this.cboClassif.Size = new System.Drawing.Size(399, 21);
+            this.cboClassif.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(537, 418);
+            this.label6.Location = new System.Drawing.Point(539, 605);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 21);
             this.label6.TabIndex = 2;
             this.label6.Text = "Classificação:";
+            // 
+            // pc1
+            // 
+            this.pc1.Location = new System.Drawing.Point(538, 283);
+            this.pc1.Name = "pc1";
+            this.pc1.Size = new System.Drawing.Size(401, 178);
+            this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pc1.TabIndex = 9;
+            this.pc1.TabStop = false;
+            // 
+            // btnImg
+            // 
+            this.btnImg.Location = new System.Drawing.Point(537, 481);
+            this.btnImg.Name = "btnImg";
+            this.btnImg.Size = new System.Drawing.Size(402, 47);
+            this.btnImg.TabIndex = 10;
+            this.btnImg.Text = "Selecione a Imagem";
+            this.btnImg.UseVisualStyleBackColor = true;
+            this.btnImg.Click += new System.EventHandler(this.btnImg_Click);
             // 
             // FrmCadastrarFilme
             // 
@@ -290,9 +316,11 @@
             this.Name = "FrmCadastrarFilme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCadastrarFilme";
+            this.Load += new System.EventHandler(this.FrmCadastrarFilme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -302,12 +330,12 @@
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.ComboBox cbo1;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.ComboBox cboGenero;
+        private System.Windows.Forms.TextBox txtProdutora;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label lblTipoUsuario;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblNome;
@@ -317,7 +345,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cbo2;
+        private System.Windows.Forms.ComboBox cboClassif;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnImg;
+        private System.Windows.Forms.PictureBox pc1;
     }
 }

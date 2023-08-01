@@ -216,5 +216,8 @@
   <ItemGroup>
     <None Include="Resources\hash9.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imgSave\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
