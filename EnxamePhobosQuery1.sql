@@ -1,5 +1,5 @@
 use EnxamePhobosDB;
-select * from usuario;
+select * from filme;
 select*from tipousuario;
 
 insert into tipousuario (Descricao) values ('Adminastrador'),('Outros'); 
@@ -27,7 +27,7 @@ insert into usuario (Nome,Email,Senha,DataNascUsuario,TipoUsuario_id) values
 
 update Usuario set Nome = 'kaiqque',Email='kaiqque@email.com' where Usuario.Id = 6;
 
-DELETE FROM usuario WHERE usuario.Id = 23;
+DELETE FROM filme WHERE filme.Id = 21;
 
 select * from Filme;
 

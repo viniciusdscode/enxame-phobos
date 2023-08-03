@@ -75,6 +75,7 @@ namespace EnxamePhobos.Desktop
                 txtNome.Text = objModelo.Nome;
                 txtEmail.Text = objModelo.Email;
                 txtSenha.Text = objModelo.Senha;
+
                 txtData.Text = objModelo.DataNascUsuario.ToString();
                 cbo1.SelectedText = objModelo.TipoUsuario_id;
             }

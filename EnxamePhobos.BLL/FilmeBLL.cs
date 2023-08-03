@@ -41,6 +41,11 @@ namespace EnxamePhobos.BLL
             return objBLL.SearchByName(objSearch);
         }
 
+        public FilmeDTO SearchByNameFilmDsk(string objSearch)
+        {
+            return objBLL.SearchByNameDsk(objSearch);
+        }
+
         //busca id
         public FilmeDTO SearchByIdFilm(int objSearch)
         {

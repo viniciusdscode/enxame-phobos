@@ -167,6 +167,41 @@ namespace EnxamePhobos.DAL
 
         }
 
+        public FilmeDTO SearchByNameDsk(string objSearch)
+        {
+            try
+            {
+                Conectar();
+                cmd = new MySqlCommand("SELECT filme.id,Titulo,Produtora,UrlImg,DescricaoGenero,DescricaoClassificacao FROM filme INNER JOIN genero ON genero_id = genero.id INNER JOIN classificacao ON Classificacao_Id = classificacao.id WHERE filme.titulo = @Titulo;", conn);
+                cmd.Parameters.AddWithValue("@Titulo", objSearch);
+                dr = cmd.ExecuteReader();
+                FilmeDTO obj = null;
+                if (dr.Read())
+                {
+                    obj = new FilmeDTO();
+                    obj.Id = Convert.ToInt32(dr["ID"]);
+                    obj.Titulo = dr["Titulo"].ToString();
+                    obj.Produtora = dr["Produtora"].ToString();
+                    obj.UrlImg = dr["UrlImg"].ToString();
+                    obj.Genero_Id = dr["DescricaoGenero"].ToString();
+                    obj.Classificacao_Id = dr["DescricaoClassificacao"].ToString();
+
+                }
+                return obj;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Deu Merda !!" + ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+
+
+        }
+
         //busca por id
         public FilmeDTO SearchIdFilm(int objSearch)
         {
