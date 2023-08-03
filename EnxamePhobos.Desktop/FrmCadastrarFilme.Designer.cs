@@ -47,10 +47,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnImg = new System.Windows.Forms.Button();
+            this.pc1 = new System.Windows.Forms.PictureBox();
             this.cboClassif = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pc1 = new System.Windows.Forms.PictureBox();
-            this.btnImg = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
@@ -268,6 +268,26 @@
             this.panel1.Size = new System.Drawing.Size(1000, 800);
             this.panel1.TabIndex = 1;
             // 
+            // btnImg
+            // 
+            this.btnImg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImg.Location = new System.Drawing.Point(537, 481);
+            this.btnImg.Name = "btnImg";
+            this.btnImg.Size = new System.Drawing.Size(402, 47);
+            this.btnImg.TabIndex = 10;
+            this.btnImg.Text = "Selecione a Imagem";
+            this.btnImg.UseVisualStyleBackColor = true;
+            this.btnImg.Click += new System.EventHandler(this.btnImg_Click);
+            // 
+            // pc1
+            // 
+            this.pc1.Location = new System.Drawing.Point(538, 283);
+            this.pc1.Name = "pc1";
+            this.pc1.Size = new System.Drawing.Size(401, 178);
+            this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pc1.TabIndex = 9;
+            this.pc1.TabStop = false;
+            // 
             // cboClassif
             // 
             this.cboClassif.FormattingEnabled = true;
@@ -286,25 +306,6 @@
             this.label6.Size = new System.Drawing.Size(105, 21);
             this.label6.TabIndex = 2;
             this.label6.Text = "Classificação:";
-            // 
-            // pc1
-            // 
-            this.pc1.Location = new System.Drawing.Point(538, 283);
-            this.pc1.Name = "pc1";
-            this.pc1.Size = new System.Drawing.Size(401, 178);
-            this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc1.TabIndex = 9;
-            this.pc1.TabStop = false;
-            // 
-            // btnImg
-            // 
-            this.btnImg.Location = new System.Drawing.Point(537, 481);
-            this.btnImg.Name = "btnImg";
-            this.btnImg.Size = new System.Drawing.Size(402, 47);
-            this.btnImg.TabIndex = 10;
-            this.btnImg.Text = "Selecione a Imagem";
-            this.btnImg.UseVisualStyleBackColor = true;
-            this.btnImg.Click += new System.EventHandler(this.btnImg_Click);
             // 
             // FrmCadastrarFilme
             // 

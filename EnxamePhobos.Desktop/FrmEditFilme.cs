@@ -64,6 +64,7 @@ namespace EnxamePhobos.Desktop
                 
 
             }
+            cpAtivo();
 
         }
 
@@ -121,5 +122,28 @@ namespace EnxamePhobos.Desktop
             cboClassif.Refresh();
         }
 
+        private void FrmEditFilme_Load(object sender, EventArgs e)
+        {
+            cpInativo();
+        }
+
+        public void cpAtivo()
+        {
+            txtTitulo.Enabled = true;
+            txtProdutora.Enabled = true;
+            btnImg.Enabled = true;
+            cboGenero.Enabled = true;
+            cboClassif.Enabled = true;
+        }
+
+        public void cpInativo()
+        {
+            txtId.Enabled = false;
+            txtTitulo.Enabled = false;
+            txtProdutora.Enabled = false;
+            btnImg.Enabled = false;
+            cboGenero.Enabled = false;
+            cboClassif.Enabled = false;
+        }
     }
 }

@@ -142,6 +142,7 @@
             // 
             // btnImg
             // 
+            this.btnImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImg.Location = new System.Drawing.Point(545, 523);
             this.btnImg.Name = "btnImg";
             this.btnImg.Size = new System.Drawing.Size(395, 47);
@@ -294,6 +295,7 @@
             // 
             // btnPesquisar
             // 
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisar.Location = new System.Drawing.Point(852, 151);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(88, 70);
@@ -373,6 +375,7 @@
             this.Name = "FrmEditFilme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEditFilme";
+            this.Load += new System.EventHandler(this.FrmEditFilme_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();

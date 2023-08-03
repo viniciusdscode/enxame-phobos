@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExcluirFilme));
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cbo2 = new System.Windows.Forms.ComboBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.cboClassificacao = new System.Windows.Forms.ComboBox();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.cbo1 = new System.Windows.Forms.ComboBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.cboGenero = new System.Windows.Forms.ComboBox();
+            this.txtProdutora = new System.Windows.Forms.TextBox();
             this.lblMessage = new System.Windows.Forms.Label();
             this.lblTipoUsuario = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
@@ -52,49 +52,53 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnImg = new System.Windows.Forms.Button();
+            this.pc1 = new System.Windows.Forms.PictureBox();
             this.btnFechar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(848, 185);
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(850, 162);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 70);
             this.button1.TabIndex = 10;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtId
             // 
-            this.textBox2.Location = new System.Drawing.Point(539, 235);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(303, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtId.Location = new System.Drawing.Point(541, 212);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(303, 20);
+            this.txtId.TabIndex = 9;
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(539, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(303, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtSearch.Location = new System.Drawing.Point(541, 162);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(303, 20);
+            this.txtSearch.TabIndex = 9;
             // 
-            // cbo2
+            // cboClassificacao
             // 
-            this.cbo2.FormattingEnabled = true;
-            this.cbo2.Location = new System.Drawing.Point(537, 503);
-            this.cbo2.Name = "cbo2";
-            this.cbo2.Size = new System.Drawing.Size(399, 21);
-            this.cbo2.TabIndex = 8;
+            this.cboClassificacao.FormattingEnabled = true;
+            this.cboClassificacao.Location = new System.Drawing.Point(541, 668);
+            this.cboClassificacao.Name = "cboClassificacao";
+            this.cboClassificacao.Size = new System.Drawing.Size(399, 21);
+            this.cboClassificacao.TabIndex = 8;
             // 
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.SpringGreen;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpar.Location = new System.Drawing.Point(785, 559);
+            this.btnLimpar.Location = new System.Drawing.Point(785, 707);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(152, 59);
             this.btnLimpar.TabIndex = 6;
@@ -106,28 +110,28 @@
             this.btnExcluir.BackColor = System.Drawing.Color.Red;
             this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Location = new System.Drawing.Point(539, 559);
+            this.btnExcluir.Location = new System.Drawing.Point(539, 707);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(152, 59);
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
             // 
-            // cbo1
+            // cboGenero
             // 
-            this.cbo1.FormattingEnabled = true;
-            this.cbo1.Location = new System.Drawing.Point(537, 444);
-            this.cbo1.Name = "cbo1";
-            this.cbo1.Size = new System.Drawing.Size(399, 21);
-            this.cbo1.TabIndex = 4;
+            this.cboGenero.FormattingEnabled = true;
+            this.cboGenero.Location = new System.Drawing.Point(543, 620);
+            this.cboGenero.Name = "cboGenero";
+            this.cboGenero.Size = new System.Drawing.Size(399, 21);
+            this.cboGenero.TabIndex = 4;
             // 
-            // txtEmail
+            // txtProdutora
             // 
-            this.txtEmail.Location = new System.Drawing.Point(537, 392);
-            this.txtEmail.MaxLength = 150;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(399, 20);
-            this.txtEmail.TabIndex = 1;
+            this.txtProdutora.Location = new System.Drawing.Point(539, 333);
+            this.txtProdutora.MaxLength = 150;
+            this.txtProdutora.Name = "txtProdutora";
+            this.txtProdutora.Size = new System.Drawing.Size(399, 20);
+            this.txtProdutora.TabIndex = 1;
             // 
             // lblMessage
             // 
@@ -144,7 +148,7 @@
             this.lblTipoUsuario.AutoSize = true;
             this.lblTipoUsuario.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTipoUsuario.Location = new System.Drawing.Point(675, 420);
+            this.lblTipoUsuario.Location = new System.Drawing.Point(675, 568);
             this.lblTipoUsuario.Name = "lblTipoUsuario";
             this.lblTipoUsuario.Size = new System.Drawing.Size(0, 21);
             this.lblTipoUsuario.TabIndex = 2;
@@ -154,7 +158,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(537, 479);
+            this.label6.Location = new System.Drawing.Point(539, 644);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 21);
             this.label6.TabIndex = 2;
@@ -165,26 +169,26 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(535, 420);
+            this.label9.Location = new System.Drawing.Point(543, 592);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 21);
             this.label9.TabIndex = 2;
             this.label9.Text = "Gênero:";
             // 
-            // txtNome
+            // txtTitulo
             // 
-            this.txtNome.Location = new System.Drawing.Point(537, 339);
-            this.txtNome.MaxLength = 150;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(400, 20);
-            this.txtNome.TabIndex = 0;
+            this.txtTitulo.Location = new System.Drawing.Point(539, 280);
+            this.txtTitulo.MaxLength = 150;
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(400, 20);
+            this.txtTitulo.TabIndex = 0;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblEmail.Location = new System.Drawing.Point(675, 364);
+            this.lblEmail.Location = new System.Drawing.Point(677, 305);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(0, 21);
             this.lblEmail.TabIndex = 2;
@@ -194,7 +198,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(534, 368);
+            this.label5.Location = new System.Drawing.Point(536, 309);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 21);
             this.label5.TabIndex = 2;
@@ -205,7 +209,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNome.Location = new System.Drawing.Point(675, 315);
+            this.lblNome.Location = new System.Drawing.Point(677, 256);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(0, 21);
             this.lblNome.TabIndex = 2;
@@ -215,7 +219,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(535, 161);
+            this.label8.Location = new System.Drawing.Point(537, 138);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(173, 21);
             this.label8.TabIndex = 2;
@@ -237,7 +241,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(537, 312);
+            this.label4.Location = new System.Drawing.Point(539, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 21);
             this.label4.TabIndex = 2;
@@ -280,20 +284,22 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.btnImg);
+            this.panel1.Controls.Add(this.pc1);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.cbo2);
+            this.panel1.Controls.Add(this.txtId);
+            this.panel1.Controls.Add(this.txtSearch);
+            this.panel1.Controls.Add(this.cboClassificacao);
             this.panel1.Controls.Add(this.btnFechar);
             this.panel1.Controls.Add(this.btnLimpar);
             this.panel1.Controls.Add(this.btnExcluir);
-            this.panel1.Controls.Add(this.cbo1);
-            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.cboGenero);
+            this.panel1.Controls.Add(this.txtProdutora);
             this.panel1.Controls.Add(this.lblMessage);
             this.panel1.Controls.Add(this.lblTipoUsuario);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.txtTitulo);
             this.panel1.Controls.Add(this.lblEmail);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.lblNome);
@@ -309,6 +315,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 800);
             this.panel1.TabIndex = 3;
+            // 
+            // btnImg
+            // 
+            this.btnImg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImg.Location = new System.Drawing.Point(540, 539);
+            this.btnImg.Name = "btnImg";
+            this.btnImg.Size = new System.Drawing.Size(399, 47);
+            this.btnImg.TabIndex = 27;
+            this.btnImg.Text = "Selecione a Imagem";
+            this.btnImg.UseVisualStyleBackColor = true;
+            // 
+            // pc1
+            // 
+            this.pc1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pc1.Location = new System.Drawing.Point(540, 369);
+            this.pc1.Name = "pc1";
+            this.pc1.Size = new System.Drawing.Size(399, 154);
+            this.pc1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pc1.TabIndex = 26;
+            this.pc1.TabStop = false;
             // 
             // btnFechar
             // 
@@ -347,6 +373,7 @@
             this.Text = "FrmExcluirFilme";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -355,19 +382,19 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox cbo2;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ComboBox cboClassificacao;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.ComboBox cbo1;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.ComboBox cboGenero;
+        private System.Windows.Forms.TextBox txtProdutora;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label lblTipoUsuario;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblNome;
@@ -379,5 +406,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnImg;
+        private System.Windows.Forms.PictureBox pc1;
     }
 }
