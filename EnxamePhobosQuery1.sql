@@ -90,4 +90,7 @@ UPDATE filme SET Titulo='Terrifier', Produtora='MONDO', UrlImg='~/resource/img/t
 
 SELECT Usuario.Id, Nome, Email, Senha, DataNascUsuario, Descricao FROM Usuario INNER JOIN TipoUsuario ON Usuario.TipoUsuario_Id = TipoUsuario.Id WHERE Usuario.Nome = 'robsu';
 
-SELECT filme.id,Titulo,Produtora,UrlImg,DescricaoGenero,DescricaoClassificacao FROM filme INNER JOIN genero ON genero_id = genero.id INNER JOIN classificacao ON Classificacao_Id = classificacao.id WHERE DescricaoGenero = 'Terror';
+SELECT filme.id,Titulo,Produtora,UrlImg,DescricaoGenero,DescricaoClassificacao FROM filme INNER JOIN genero ON genero_id = genero.id INNER JOIN classificacao ON Classificacao_Id = classificacao.id WHERE filme.titulo = 'Terrifier';
+
+
+SELECT filme.id,titulo,produtora,urlimg,genero.DescricaoGenero,classificacao.DescricaoClassificacao FROM filme INNER JOIN genero ON genero_id = genero.id INNER JOIN classificacao ON classificacao_id = classificacao.id

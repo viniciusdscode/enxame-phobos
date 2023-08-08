@@ -1,4 +1,5 @@
 ﻿using DGVPrinterHelper;
+using EnxamePhobos.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,24 @@ namespace EnxamePhobos.Desktop
 
         private void btnGerar_Click(object sender, EventArgs e)
         {
+            FilmeBLL objBLL = new FilmeBLL();
+            gv1.DataSource = objBLL.ListarFilme();
             gv1.Visible = true;
+            CarregaImg();
+        }
+
+        private void CarregaImg()
+        {
+            foreach (DataGridViewRow row in gv1.Rows)
+            {
+                DataGridViewImageColumn col = new DataGridViewImageColumn();
+                col.Name = "Img";
+                col.HeaderText = "Imagem";
+                col.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                row.Cells["Img"].Value = Image.FromFile(row.Cells["UrlImg"].Value.ToString());
+                
+                
+            }
         }
     }
 }

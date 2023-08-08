@@ -80,6 +80,7 @@
             // 
             // gv1
             // 
+            this.gv1.AllowUserToAddRows = false;
             this.gv1.AllowUserToDeleteRows = false;
             this.gv1.AllowUserToResizeColumns = false;
             this.gv1.AllowUserToResizeRows = false;
@@ -245,7 +246,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmUsuario";
+            this.Text = "9";
             this.Load += new System.EventHandler(this.FrmUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

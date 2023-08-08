@@ -52,10 +52,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnImg = new System.Windows.Forms.Button();
             this.pc1 = new System.Windows.Forms.PictureBox();
             this.btnFechar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pc1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +70,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtId
             // 
@@ -88,7 +89,7 @@
             // cboClassificacao
             // 
             this.cboClassificacao.FormattingEnabled = true;
-            this.cboClassificacao.Location = new System.Drawing.Point(541, 668);
+            this.cboClassificacao.Location = new System.Drawing.Point(541, 620);
             this.cboClassificacao.Name = "cboClassificacao";
             this.cboClassificacao.Size = new System.Drawing.Size(399, 21);
             this.cboClassificacao.TabIndex = 8;
@@ -98,29 +99,31 @@
             this.btnLimpar.BackColor = System.Drawing.Color.SpringGreen;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpar.Location = new System.Drawing.Point(785, 707);
+            this.btnLimpar.Location = new System.Drawing.Point(785, 673);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(152, 59);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.Color.Red;
             this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Location = new System.Drawing.Point(539, 707);
+            this.btnExcluir.Location = new System.Drawing.Point(539, 673);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(152, 59);
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // cboGenero
             // 
             this.cboGenero.FormattingEnabled = true;
-            this.cboGenero.Location = new System.Drawing.Point(543, 620);
+            this.cboGenero.Location = new System.Drawing.Point(543, 572);
             this.cboGenero.Name = "cboGenero";
             this.cboGenero.Size = new System.Drawing.Size(399, 21);
             this.cboGenero.TabIndex = 4;
@@ -158,7 +161,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(539, 644);
+            this.label6.Location = new System.Drawing.Point(539, 596);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 21);
             this.label6.TabIndex = 2;
@@ -169,7 +172,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(543, 592);
+            this.label9.Location = new System.Drawing.Point(543, 544);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 21);
             this.label9.TabIndex = 2;
@@ -284,7 +287,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.panel1.Controls.Add(this.btnImg);
             this.panel1.Controls.Add(this.pc1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txtId);
@@ -305,6 +307,7 @@
             this.panel1.Controls.Add(this.lblNome);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
@@ -315,16 +318,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 800);
             this.panel1.TabIndex = 3;
-            // 
-            // btnImg
-            // 
-            this.btnImg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImg.Location = new System.Drawing.Point(540, 539);
-            this.btnImg.Name = "btnImg";
-            this.btnImg.Size = new System.Drawing.Size(399, 47);
-            this.btnImg.TabIndex = 27;
-            this.btnImg.Text = "Selecione a Imagem";
-            this.btnImg.UseVisualStyleBackColor = true;
             // 
             // pc1
             // 
@@ -361,6 +354,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Comfortaa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(543, 189);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(26, 21);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Id:";
+            // 
             // FrmExcluirFilme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,6 +375,7 @@
             this.Name = "FrmExcluirFilme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmExcluirFilme";
+            this.Load += new System.EventHandler(this.FrmExcluirFilme_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pc1)).EndInit();
@@ -406,7 +411,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnImg;
         private System.Windows.Forms.PictureBox pc1;
+        private System.Windows.Forms.Label label10;
     }
 }
